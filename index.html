@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Louco</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Marca:</legend>
+            <label for="marca"><input type="text" name="marca" id="marca" maxlength="10" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Qual combustível:</legend>
+            <label for="combustivel"><input type="checkbox" name="combustivel" id="combustivel" value="Gaso" required>Gasolina</label>
+            <label for="combustivel"><input type="checkbox" name="combustivel" id="combustivel" value="Alco" required>Álcool</label>
+            </fieldset>
+        <fieldset>
+            <legend>Qual motor:</legend>
+            <label for="motor"><input type="radio" name="motor" id="motor" value="1.0" required>1.0</label>
+            <label for="motor"><input type="radio" name="motor" id="motor" value="1.6" required>1.6</label>
+            <label for="motor"><input type="radio" name="motor" id="motor" value="2.0" required>2.0</label>    
+        </fieldset> 
+        <fieldset>
+            <legend>Câmbio:</legend>
+            <select name="cambio" id="cambio" required>
+                <option value="manual">Manual</option>
+                <option value="auto">Automático</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Descrição:</legend>
+            <textarea name="descricao" id="descricao" cols="80" rows="30"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Data de Fabricação:</legend>
+            <input type="date" name="data" min="1990-01-01" id="data">
+        </fieldset>
+        <fieldset>
+            <legend>Data e hora da aquisição:</legend>
+            <input type="datetime-local" name="aquisi" id="aquisi" min="2000-01-01T00:00" max="2018-01-01T23:59">
+        </fieldset>
+        <fieldset>
+            <legend>Semana da aquisição:</legend>
+            <input type="week" name="semana" id="semana" min="2000-W01">
+        </fieldset>
+        <fieldset>
+            <legend>Preço unitário:</legend>
+            <input type="number" name="preco" id="preco" min="0.01" step="0.01">
+        </fieldset>
+        <fieldset>
+            <legend>e-mail do proprietário:</legend>
+            <input type="email" name="email" id="email" multiple>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>    
+</body>
+</html>

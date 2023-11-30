@@ -1,0 +1,50 @@
+body {}
+form{
+    border-radius: 10px auto;
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    font-family:Calibri,sans-serif;
+}
+section h1 {
+    text-align: center;
+    margin: 0px;
+}
+input[type=submit] , input[type=reset] {
+    background-color: rgb(189, 55, 55);
+    padding: 10px 100px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+}
+input[type=submit]:hover , input[type=reset]:hover {
+    background-color: rgb(253, 72, 72);
+}
+
+input {
+    display: block;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 12px 20px;
+    outline: none;
+    padding: 10px;
+}
+input[type=radio] , input[type=checkbox]{
+    text-align: left;
+    display: inline;
+}
+input[type=text] , input[type=password] {
+    width: 100%;
+}
+legend {
+    padding: 10px;
+}
+fieldset {
+    background-color:rgba(67, 248, 57, 0.386);
+}
+
+*{
+    box-sizing: border-box;
+}
